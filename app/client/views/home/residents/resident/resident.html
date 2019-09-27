@@ -1,0 +1,20 @@
+<template name="homeResident">
+    <tr  id="resident-{{ _id }}" class="resident">
+      <td>{{ resident.firstName }} {{ resident.lastInitial }}</td>
+      <td class="activity-count">
+        {{ recentActiveDaysCount }}
+      </td>
+      <td class="{{ activityLabelClass }}">
+        {{#if activityLabelText }}
+        {{ activityLabelText }}
+        {{/ if }}
+      </td>
+      {{# each day in recentActiveDays }}
+        <td>
+          {{# if day.residentWasActive }}
+            <i class="fa fa-check"></i>
+          {{/ if }}
+        </td>
+      {{/ each }}
+    </tr>
+</template>

@@ -1,0 +1,28 @@
+<template name="homeGroup">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 id="{{ name }}-title" class="panel-title">
+        <i class="fa fa-cubes"></i>
+        {{ name }}
+
+        {{# if isInRole 'admin' }}
+          <button type="button" class="edit-group btn btn-default btn-xs">
+            {{_ "homeGroup-editButton-text" }}
+          </button>
+
+          <button type="button" class="new-home btn btn-primary btn-xs pull-right">
+            <i class="fa fa-home"></i>
+            {{_ "homes-homeGroup-addNewButton-home" }}
+          </button>
+        {{/ if }}
+      </h2>
+    </div>
+    <div class="panel-body">
+      {{#if homes }}
+        {{> homeGroupHomesTable homes=homes }}
+      {{ else }}
+        {{_ "homeGroup-noHomesAdded-text" }}
+      {{/ if }}
+    </div>
+  </div>
+</template>

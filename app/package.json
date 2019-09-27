@@ -1,0 +1,47 @@
+{
+  "name": "gerilife-wellbeing",
+  "version": "0.13.0",
+  "description": "Wellbeing instrument and shared log book for staff working in assisted living communities.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.40",
+    "babel-runtime": "^6.26.0",
+    "bootstrap": "^3.3.7",
+    "bootstrap-datepicker": "^1.7.1",
+    "core-js": "^2.5.3",
+    "d3": "^4.13.0",
+    "file-saver": "^1.3.3",
+    "flatpickr": "^4.4.4",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.11",
+    "meteor-node-stubs": "^0.3.2",
+    "moment": "^2.20.1",
+    "plotly.js-dist": "^1.41.3",
+    "simpl-schema": "^1.4.2",
+    "slim-select": "^1.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeriLife/wellbeing.git"
+  },
+  "keywords": [
+    "elderly",
+    "data",
+    "visualization",
+    "wellbeing",
+    "healthcare"
+  ],
+  "author": "Amble Osk.",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/GeriLife/wellbeing/issues"
+  },
+  "homepage": "https://github.com/GeriLife/wellbeing#readme"
+}

@@ -1,0 +1,32 @@
+<template name="addResidencyForExistingResidentForm">
+  {{#autoForm id="addResidencyForExistingResident" type="insert" collection="Residencies" }}
+    <label for="residentId">
+      {{_ "residencies.residentId.label" }}
+    </label>
+    {{> afFieldInput name="residentId" value=residentId options=residentIdOptions }}
+
+    <label for="homeId">
+      {{_ "residencies.homeId.label" }}
+    </label>
+    {{> afFieldInput name="homeId" value=homeId options=homeSelectOptionsWithGroups }}
+
+    <label for="moveIn">
+      {{_ "residencies.moveIn.label" }}
+    </label>
+    {{> afFieldInput name="moveIn" class="dateField" buttonClasses="fa fa-calendar" value=today }}
+
+    <label for="moveOut">
+      {{_ "residencies.moveOut.label" }}
+    </label>
+    {{> afFieldInput name="moveOut" class="dateField" buttonClasses="fa fa-calendar" }}
+
+    <br/>
+
+    <button type="submit" class="btn btn-success">
+      {{_ "addResidencyForm-save" }}
+    </button>
+    <button type="button" class="btn btn-danger" data-dismiss="modal">
+      {{_ "addResidencyForm-cancel" }}
+    </button>
+  {{/ autoForm }}
+</template>

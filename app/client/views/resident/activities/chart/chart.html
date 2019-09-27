@@ -1,0 +1,18 @@
+<template name="residentActivityTrendChart">
+    <h3>
+        {{_ "residentActivityTrendChart-header" }}
+        <button class="btn btn-primary btn-xs" type="button" data-toggle="collapse" data-target="#chartSettings"
+                aria-expanded="false" aria-controls="chartSettings">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            {{_ "residentActivityTrendChart-chartSettingsButton-text" }}
+        </button>
+    </h3>
+
+    <div class="collapse" id="chartSettings">
+        <div class="well">
+            {{> sharedReportSettingsForm }}
+        </div>
+    </div>
+
+    <div id="activityChart"></div>
+</template>

@@ -1,0 +1,6 @@
+.meteor/local
+.meteor/meteorite
+server/smtp.js
+node_modules
+.idea
+*.pyc

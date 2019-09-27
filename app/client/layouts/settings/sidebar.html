@@ -1,0 +1,51 @@
+<template name="settingsLayoutSidebar">
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+        <li class="header">{{_ "settingsLayoutSidebar-header" }}</li>
+        <li>
+          <a href='{{ pathFor "activityTypeSettings" }}'>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp;
+            <span>{{_ "settingsLayoutSidebar-activityTypesLink" }}</span>
+          </a>
+        </li>
+        <li>
+          <a href='{{ pathFor "dataSettings" }}'>
+            <i class="fa fa-database" aria-hidden="true"></i>&nbsp;
+            <span>{{_ "settingsLayoutSidebar-dataLink" }}</span>
+          </a>
+        </li>
+        <li>
+          <a href='{{ pathFor "dateTimeSettings" }}'>
+            <i class="fa fa-calendar"></i>&nbsp;
+            <span>{{_ "settingsLayoutSidebar-dateTimeLink" }}</span>
+          </a>
+        </li>
+        <li>
+          <a href='{{ pathFor "rolesSettings" }}'>
+            <i class="fa fa-user-md"></i>&nbsp;
+            <span>{{_ "settingsLayoutSidebar-rolesLink" }}</span>
+          </a>
+        </li>
+        <li>
+          <a href='{{ pathFor "userEventLog" }}'>
+            <i class="fa fa-th-list"></i>&nbsp;
+            <span>{{_ "settingsLayoutSidebar-eventLogLink" }}</span>
+          </a>
+        </li>
+        <li>
+          <a href='{{ pathFor "usersSettings" }}'>
+            <i class="fa fa-users"></i>&nbsp;
+            <span>{{_ "settingsLayoutSidebar-usersLink" }}</span>
+          </a>
+        </li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+</template>

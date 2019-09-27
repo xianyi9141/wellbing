@@ -1,0 +1,18 @@
+<template name="report">
+    <h1>
+        {{_ "report-header" }}
+        <button class="btn btn-primary btn-xs" type="button" data-toggle="collapse" data-target="#chartSettings"
+                aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            {{_ "report-chartSettingsButton-text" }}
+        </button>
+    </h1>
+
+    <div class="collapse" id="chartSettings">
+        <div class="well">
+            {{> sharedReportSettingsForm }}
+        </div>
+    </div>
+
+    <div id="residentsActivitiesChart"></div>
+</template>
